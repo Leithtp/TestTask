@@ -1,4 +1,4 @@
-using TestTask;
+using TestTask.Figure;
 
 namespace Tests
 {

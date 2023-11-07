@@ -1,20 +1,20 @@
 ﻿using TestTask.Abstract;
 
-namespace TestTask
+namespace TestTask.Figure
 {
-    public class Circle : Figure
-    {   
+    public class Circle : IFigure
+    {
         private double radius;
         public Circle(double _radius)
         {
-            if(_radius < 0 )
+            if (_radius < 0)
             {
                 throw new ArgumentException("Радиус не может быть меньше 0");
             }
             radius = _radius;
         }
 
-        public override double GetSquare()
+        public double GetSquare()
         {
             return Math.Round(Math.PI * Math.Pow(radius, 2), 2);
         }
